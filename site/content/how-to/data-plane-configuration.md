@@ -139,7 +139,7 @@ To view the full list of supported log levels, see the `NginxProxy spec` in the 
 be [run with NGINX in debug mode](#run-nginx-gateway-fabric-with-nginx-in-debug-mode) upon startup through the addition
 of a few arguments. {{</ note >}}
 
-## Run NGINX Gateway Fabric with NGINX in debug mode
+### Run NGINX Gateway Fabric with NGINX in debug mode
 
 To run NGINX Gateway Fabric with NGINX in debug mode, follow the [installation document]({{< relref "installation/installing-ngf" >}}) with these additional steps:
 

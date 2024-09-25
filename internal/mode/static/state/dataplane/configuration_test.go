@@ -3780,6 +3780,8 @@ func TestBuildRewriteIPSettings(t *testing.T) {
 }
 
 func TestBuildLogging(t *testing.T) {
+	defaultLogging := Logging{ErrorLevel: defaultErrorLogLevel}
+
 	t.Parallel()
 	tests := []struct {
 		msg                string
@@ -3789,7 +3791,7 @@ func TestBuildLogging(t *testing.T) {
 		{
 			msg:                "NginxProxy is nil",
 			g:                  &graph.Graph{},
-			expLoggingSettings: Logging{ErrorLevel: "info"},
+			expLoggingSettings: defaultLogging,
 		},
 		{
 			msg: "NginxProxy does not specify log level",
@@ -3801,7 +3803,7 @@ func TestBuildLogging(t *testing.T) {
 					},
 				},
 			},
-			expLoggingSettings: Logging{ErrorLevel: "info"},
+			expLoggingSettings: defaultLogging,
 		},
 		{
 			msg: "NginxProxy log level set to debug",

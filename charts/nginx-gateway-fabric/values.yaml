@@ -88,7 +88,7 @@ nginx:
   # -- Is NGINX Plus image being used
   plus: false
 
-  # -- Is NGINX run in debug mode. This should be used with setting the NGINX error log level to debug.
+  # -- Enable debugging for NGINX. Uses the nginx-debug binary. The NGINX error log level should be set to debug in the NginxProxy resource.
   debug: false
 
   # -- The configuration for the data plane that is contained in the NginxProxy resource.

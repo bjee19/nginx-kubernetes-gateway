@@ -106,7 +106,7 @@ spec:
           mountPath: /etc/nginx/conf.d
         - name: nginx-stream-conf
           mountPath: /etc/nginx/stream-conf.d
-        - name: main-includes
+        - name: nginx-main-includes
           mountPath: /etc/nginx/main-includes
         - name: nginx-secrets
           mountPath: /etc/nginx/secrets
@@ -127,7 +127,7 @@ spec:
         emptyDir: {}
       - name: nginx-stream-conf
         emptyDir: {}
-      - name: main-includes
+      - name: nginx-main-includes
         emptyDir: {}
       - name: nginx-secrets
         emptyDir: {}

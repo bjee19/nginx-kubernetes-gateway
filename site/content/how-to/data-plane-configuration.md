@@ -157,5 +157,3 @@ as arguments and add `/bin/sh` as the command. The deployment manifest should lo
   - /bin/sh
 ...
 ```
-
-To view a full example, look at our generated [deployment manifest](https://raw.githubusercontent.com/nginxinc/nginx-gateway-fabric/v1.4.0/deploy/nginx-debug/deploy.yaml).
